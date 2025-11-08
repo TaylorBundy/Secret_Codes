@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Códigos Secretos Android</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header>
+    <h1>📱 Códigos Secretos Android</h1>
+  </header>
+
+  <main>
+    <section id="selector">
+      <label for="marcaSelect">Seleccioná la marca:</label>
+      <select id="marcaSelect" onmouseover="Titulos(this.id)">
+        <option value="">-- Elegí una marca --</option>
+      </select>
+      <button id="btnEditar" onmouseover="Titulos(this.id)">🛠️ Editar Códigos</button>
+    </section>
+    <div class="SearchContainer">
+      <span class="searchIcon">🔍</span>
+      <input type="text" id="searchInput" onmouseover="Titulos(this.id)" placeholder="Buscar por Código o Descripción">
+      <div id="contador" onmouseover="Titulos(this.id)">Códigos cargados: 0</div>
+    </div>
+    <section id="tablaContainer">
+      <table id="tablaCodigos">
+        <thead>
+          <tr>
+            <th class="cod">Código</th>
+            <th>Descripción</th>
+            <th class="rie">Riesgo</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>Desarrollado con 💚 estilo Android</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/assets.js"></script>
+</body>
+</html>

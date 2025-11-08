@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editar Códigos Secretos</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header>
+    <h1>✏️ Editor de Códigos Secretos</h1>
+  </header>
+
+  <main>
+    <section id="selector">
+      <label for="marcaSelect">Seleccioná la marca:</label>
+      <select class="marcaSelectEditar" id="marcaSelect" onmouseover="Titulos(this.id)"></select>
+      <button class="btns" id="btnAgregarCodigo" onmouseover="Titulos(this.id)">➕ Agregar Código</button>
+      <button class="btns" id="btnDescargar" onmouseover="Titulos(this.id)">💾 Descargar Cambios</button>
+    </section>
+
+    <div class="SearchContainer">
+      <span class="searchIcon">🔍</span>
+      <input type="text" id="searchInput" onmouseover="Titulos(this.id)" placeholder="Buscar por Código o Descripción">
+      <div id="contador" onmouseover="Titulos(this.id)">Códigos cargados: 0</div>
+    </div>
+    <!-- <div id="contador" onmouseover="Titulos(this.id)">Códigos cargados: 0</div> -->
+    <section id="tablaContainer">
+      <table id="tablaCodigos">
+        <thead>
+          <tr>
+            <th id="thIndice" aria-label="" onmouseover="Titulos(this.id)" class="indice">#</th>
+            <th class="cod">Código</th>
+            <th>Descripción</th>
+            <th class="rie">Riesgo</th>
+            <th class="acc">Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="tablaBody"></tbody>
+      </table>
+    </section>
+    <!-- <div id="tooltip" class="tooltip"></div> -->
+
+    <!-- <section>
+      <button id="btnDescargar">💾 Descargar Cambios</button>
+    </section> -->
+    <!-- Modal para agregar código -->
+    <div id="modalAgregar" class="modal">
+        <div class="modal-content">
+        <h3>Agregar Nuevo Código</h3>
+        <label>Código:</label>
+        <input type="text" id="inputCodigo" placeholder="Ej: *#0000#">
+        <label>Descripción:</label>
+        <input type="text" id="inputDescripcion" placeholder="Descripción breve">
+        <label>Riesgo:</label>
+        <select id="selectRiesgo">
+            <option value="Bajo">Bajo</option>
+            <option value="Medio">Medio</option>
+            <option value="Alto">Alto</option>
+        </select>
+        <div class="modal-buttons">
+            <button id="btnCancelarModal">Cancelar</button>
+            <button id="btnAceptarModal">Aceptar</button>
+        </div>
+        </div>
+    </div>
+    <!-- Modal de confirmación de eliminación -->
+    <div id="modalEliminar" class="modal">
+      <div class="modal-content">
+        <h3>Eliminar código</h3>
+        <p id="textoEliminar"></p>
+        <div class="modal-buttons">
+          <button id="btnCancelarEliminar" onmouseover="Titulos(this.id)">Cancelar</button>
+          <button id="btnAceptarEliminar" onmouseover="Titulos(this.id)">Aceptar</button>
+        </div>
+      </div>
+    </div>
+
+  
+  </main>
+
+  <footer>
+    <p>💚 Interfaz tipo Android — Editor JSON</p>
+  </footer>
+
+  <script src="js/editar.js"></script>
+  <script src="js/assets.js"></script>
+</body>
+</html>

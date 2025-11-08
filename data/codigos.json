@@ -1,0 +1,450 @@
+[
+  {
+    "marca": "Redmi",
+    "codigo": "*#06#",
+    "descripcion": "Mostrar IMEI/MEID/Serial",
+    "riesgo": "Bajo",
+    "indice": 1
+  },
+  {
+    "marca": "Redmi",
+    "codigo": "*#*#4636#*#*",
+    "descripcion": "Información del teléfono, batería, estadísticas de uso (Android standard)",
+    "riesgo": "Bajo",
+    "indice": 2
+  },
+  {
+    "marca": "Redmi",
+    "codigo": "*#*#6484#*#*",
+    "descripcion": "Menú de prueba del hardware (CIT / Factory Test)",
+    "riesgo": "Alto",
+    "indice": 3
+  },
+  {
+    "marca": "Redmi",
+    "codigo": "*#*#726633#*#*",
+    "descripcion": "Opciones 5G (habilitar/deshabilitar 5G SA en algunos modelos)",
+    "riesgo": "Bajo",
+    "indice": 4
+  },
+  {
+    "marca": "Redmi",
+    "codigo": "*#*#6485#*#*",
+    "descripcion": "Chequeo/calibración de batería (en algunos modelos)",
+    "riesgo": "Bajo",
+    "indice": 5
+  },
+  {
+    "marca": "Redmi",
+    "codigo": "*#*#0283#*#*",
+    "descripcion": "Loopback test (audio)",
+    "riesgo": "Bajo",
+    "indice": 6
+  },
+  {
+    "marca": "Redmi",
+    "codigo": "*#*#0842#*#*",
+    "descripcion": "Prueba de vibración y retroiluminación",
+    "riesgo": "Bajo",
+    "indice": 7
+  },
+  {
+    "marca": "Redmi",
+    "codigo": "*#*#232331#*#*",
+    "descripcion": "Test Bluetooth",
+    "riesgo": "Bajo",
+    "indice": 8
+  },
+  {
+    "marca": "Redmi",
+    "codigo": "*#*#0588#*#*",
+    "descripcion": "Prueba sensor de proximidad",
+    "riesgo": "Bajo",
+    "indice": 9
+  },
+  {
+    "marca": "Redmi",
+    "codigo": "*#*#289#*#*",
+    "descripcion": "Test de micrófono y altavoz (en algunos modelos)",
+    "riesgo": "Bajo",
+    "indice": 10
+  },
+  {
+    "marca": "Redmi",
+    "codigo": "*#*#225#*#*",
+    "descripcion": "Información del calendario (events)",
+    "riesgo": "Bajo",
+    "indice": 11
+  },
+  {
+    "marca": "Redmi",
+    "codigo": "*#*#426#*#*",
+    "descripcion": "Diagnóstico de Google Play Services / FCM",
+    "riesgo": "Medio",
+    "indice": 12
+  },
+  {
+    "marca": "Redmi",
+    "codigo": "*#*#6484#*#*",
+    "descripcion": "CIT Hardware Test menu (battery, screen, sensors)",
+    "riesgo": "Alto",
+    "indice": 13
+  },
+  {
+    "marca": "Redmi",
+    "codigo": "*#*#86583#*#*",
+    "descripcion": "Habilitar/deshabilitar VoLTE carrier check (en algunos modelos)",
+    "riesgo": "Bajo",
+    "indice": 14
+  },
+  {
+    "marca": "Redmi",
+    "codigo": "*#*#86943#*#*",
+    "descripcion": "Habilitar/deshabilitar VoWiFi carrier check (en algunos modelos)",
+    "riesgo": "Bajo",
+    "indice": 15
+  },
+  {
+    "marca": "Redmi",
+    "codigo": "*#0011#",
+    "descripcion": "Acceder al Service menu (información de red / baseband)",
+    "riesgo": "Medio",
+    "indice": 16
+  },
+  {
+    "marca": "Redmi",
+    "codigo": "*#*#6485#*#*",
+    "descripcion": "Battery health / calibration (varía por modelo)",
+    "riesgo": "Bajo",
+    "indice": 17
+  },
+  {
+    "marca": "Redmi",
+    "codigo": "*#*#0#*#*",
+    "descripcion": "LCD screen test (varía por firmware)",
+    "riesgo": "Bajo",
+    "indice": 18
+  },
+  {
+    "marca": "Redmi",
+    "codigo": "*#*#0842#*#*",
+    "descripcion": "Backlight and vibration test",
+    "riesgo": "Bajo",
+    "indice": 19
+  },
+  {
+    "marca": "Redmi",
+    "codigo": "*#*#232338#*#*",
+    "descripcion": "Mostrar MAC Wi‑Fi (puede variar)",
+    "riesgo": "Bajo",
+    "indice": 20
+  },
+  {
+    "marca": "Redmi",
+    "codigo": "*#*#7262626#*#*",
+    "descripcion": "Prueba de campo móvil / network field test (en algunas ROMs)",
+    "riesgo": "Bajo",
+    "indice": 21
+  },
+  {
+    "marca": "Redmi",
+    "codigo": "*#*#389#*#*",
+    "descripcion": "Pruebas varias de hardware (varía por modelo)",
+    "riesgo": "Alto",
+    "indice": 22
+  },
+  {
+    "marca": "Redmi",
+    "codigo": "*#*#7780#*#*",
+    "descripcion": "Factory reset (soft) - borra datos de usuario",
+    "riesgo": "Alto",
+    "indice": 23
+  },
+  {
+    "marca": "Redmi",
+    "codigo": "*2767*3855#",
+    "descripcion": "Hard reset / formateo completo (borrado total)",
+    "riesgo": "Alto",
+    "indice": 24
+  },
+  {
+    "marca": "Redmi",
+    "codigo": "*#*#3264#*#*",
+    "descripcion": "Información de la RAM (en algunos dispositivos)",
+    "riesgo": "Bajo",
+    "indice": 25
+  },
+  {
+    "marca": "Redmi",
+    "codigo": "*#*#759#*#*",
+    "descripcion": "Test/diagnóstico adicional (varía)",
+    "riesgo": "Medio",
+    "indice": 26
+  },
+  {
+    "marca": "Redmi",
+    "codigo": "*#21#",
+    "descripcion": "Muestra el estado del desvío de todas las llamadas.",
+    "riesgo": "Bajo",
+    "indice": 27
+  },
+  {
+    "marca": "Redmi",
+    "codigo": "##21#",
+    "descripcion": "Desactiva el desvío de todas las llamadas.",
+    "riesgo": "Bajo",
+    "indice": 28
+  },
+  {
+    "indice": 1,
+    "marca": "Samsung",
+    "codigo": "*#06#",
+    "descripcion": "Mostrar IMEI/MEID/Serial",
+    "riesgo": "Bajo"
+  },
+  {
+    "marca": "Samsung",
+    "codigo": "*#0*#",
+    "descripcion": "Menú diagnóstico de hardware (pantalla, sensores, cámara, altavoz, vibración)",
+    "riesgo": "Alto",
+    "indice": 2
+  },
+  {
+    "marca": "Samsung",
+    "codigo": "*#12580*369#",
+    "descripcion": "Información detallada SW y HW",
+    "riesgo": "Bajo",
+    "indice": 3
+  },
+  {
+    "marca": "Samsung",
+    "codigo": "*#*#4636#*#*",
+    "descripcion": "Información del teléfono, batería, estadísticas de uso (Android standard)",
+    "riesgo": "Bajo",
+    "indice": 4
+  },
+  {
+    "marca": "Samsung",
+    "codigo": "*#0228#",
+    "descripcion": "Estado de batería (ADC reading)",
+    "riesgo": "Bajo",
+    "indice": 5
+  },
+  {
+    "marca": "Samsung",
+    "codigo": "*#2663#",
+    "descripcion": "Firmware y versión del táctil (touch)",
+    "riesgo": "Bajo",
+    "indice": 6
+  },
+  {
+    "marca": "Samsung",
+    "codigo": "*#232331#",
+    "descripcion": "Test de Bluetooth (modo test)",
+    "riesgo": "Bajo",
+    "indice": 7
+  },
+  {
+    "marca": "Samsung",
+    "codigo": "*#232338#",
+    "descripcion": "Mostrar dirección MAC Wi‑Fi (varía por firmware)",
+    "riesgo": "Bajo",
+    "indice": 8
+  },
+  {
+    "marca": "Samsung",
+    "codigo": "*#7353#",
+    "descripcion": "Menú de pruebas rápidas (touch, sensor, sonido, etc.)",
+    "riesgo": "Medio",
+    "indice": 9
+  },
+  {
+    "marca": "Samsung",
+    "codigo": "*#0842#",
+    "descripcion": "Prueba de vibración y retroiluminación",
+    "riesgo": "Bajo",
+    "indice": 10
+  },
+  {
+    "marca": "Samsung",
+    "codigo": "*#0588#",
+    "descripcion": "Test de sensor de proximidad",
+    "riesgo": "Bajo",
+    "indice": 11
+  },
+  {
+    "marca": "Samsung",
+    "codigo": "*#1472365#",
+    "descripcion": "Ajustes/test GPS (varía por modelo)",
+    "riesgo": "Bajo",
+    "indice": 12
+  },
+  {
+    "marca": "Samsung",
+    "codigo": "*#9090#",
+    "descripcion": "Configuración de diagnóstico (log/diagnóstico del servicio)",
+    "riesgo": "Medio",
+    "indice": 13
+  },
+  {
+    "marca": "Samsung",
+    "codigo": "*#9900#",
+    "descripcion": "SysDump / opciones de limpieza de logs y debugging",
+    "riesgo": "Bajo",
+    "indice": 14
+  },
+  {
+    "marca": "Samsung",
+    "codigo": "*#34971539#",
+    "descripcion": "Información de firmware de la cámara (varía por modelo)",
+    "riesgo": "Bajo",
+    "indice": 15
+  },
+  {
+    "marca": "Samsung",
+    "codigo": "*#272*IMEI#",
+    "descripcion": "Mostrar/Cambiar CSC (país/operador) — requiere permisos y puede no funcionar en muchos modelos",
+    "riesgo": "Bajo",
+    "indice": 16
+  },
+  {
+    "marca": "Samsung",
+    "codigo": "*#197328640#",
+    "descripcion": "Service Mode / Menú de servicio avanzado (puede variar por firmware)",
+    "riesgo": "Medio",
+    "indice": 17
+  },
+  {
+    "marca": "Samsung",
+    "codigo": "*#7284#",
+    "descripcion": "Configuración de USB (logging, configuraciones de descarga)",
+    "riesgo": "Medio",
+    "indice": 18
+  },
+  {
+    "marca": "Samsung",
+    "codigo": "*#7380#",
+    "descripcion": "Reset de preferencias del sistema (varía por modelo)",
+    "riesgo": "Alto",
+    "indice": 19
+  },
+  {
+    "marca": "Samsung",
+    "codigo": "*#0011#",
+    "descripcion": "ServiceMode - información de red / servicio (en algunos modelos)",
+    "riesgo": "Medio",
+    "indice": 20
+  },
+  {
+    "marca": "Samsung",
+    "codigo": "*#1111#",
+    "descripcion": "FW Version (FTA) — información software (varía)",
+    "riesgo": "Bajo",
+    "indice": 21
+  },
+  {
+    "marca": "Samsung",
+    "codigo": "*#3282#",
+    "descripcion": "Información de uso de memoria de datos (varía)",
+    "riesgo": "Bajo",
+    "indice": 22
+  },
+  {
+    "marca": "Samsung",
+    "codigo": "*#0808#",
+    "descripcion": "Configuración USB (USB Settings) — modo MTP/ADB (varía)",
+    "riesgo": "Medio",
+    "indice": 23
+  },
+  {
+    "marca": "Samsung",
+    "codigo": "*#9900#",
+    "descripcion": "Administración de logs (Dump, delete)",
+    "riesgo": "Bajo",
+    "indice": 24
+  },
+  {
+    "marca": "Samsung",
+    "codigo": "*#*#7780#*#*",
+    "descripcion": "Factory soft reset (restablece datos de usuario)",
+    "riesgo": "Alto",
+    "indice": 25
+  },
+  {
+    "marca": "Samsung",
+    "codigo": "*2767*3855#",
+    "descripcion": "Hard reset / reinstalación ROM (borrado completo)",
+    "riesgo": "Alto",
+    "indice": 26
+  },
+  {
+    "marca": "Samsung",
+    "codigo": "*#*#287#*#*",
+    "descripcion": "Prueba de sensores (varía por modelo)",
+    "riesgo": "Bajo",
+    "indice": 27
+  },
+  {
+    "marca": "Samsung",
+    "codigo": "*#0589#",
+    "descripcion": "Test de sensor de luz ambiental (varía)",
+    "riesgo": "Bajo",
+    "indice": 28
+  },
+  {
+    "marca": "Samsung",
+    "codigo": "*#9090#",
+    "descripcion": "Test/Config del modo diagnóstico (RIL/ADB/Logs)",
+    "riesgo": "Medio",
+    "indice": 29
+  },
+  {
+    "marca": "Samsung",
+    "codigo": "*#232339#",
+    "descripcion": "WLAN test mode (varía)",
+    "riesgo": "Bajo",
+    "indice": 30
+  },
+  {
+    "marca": "Samsung",
+    "codigo": "*#61#",
+    "descripcion": "Mostrar número de desvío cuando no contestan.",
+    "riesgo": "Bajo",
+    "indice": 31
+  },
+  {
+    "marca": "Samsung",
+    "codigo": "*#62#",
+    "descripcion": "Mostrar número de desvío forzado cuando no hay cobertura (call forwarding en ausencia)",
+    "riesgo": "Bajo",
+    "indice": 32
+  },
+  {
+    "marca": "Samsung",
+    "codigo": "*#67#",
+    "descripcion": "Mostrar número de desvío cuando está ocupado",
+    "riesgo": "Bajo",
+    "indice": 33
+  },
+  {
+    "marca": "Samsung",
+    "codigo": "*#21#",
+    "descripcion": "Muestra el estado del desvío de todas las llamadas.",
+    "riesgo": "Bajo",
+    "indice": 34
+  },
+  {
+    "marca": "Samsung",
+    "codigo": "##21#",
+    "descripcion": "Desactiva el desvío de todas las llamadas.",
+    "riesgo": "Bajo",
+    "indice": 35
+  },
+  {
+    "marca": "Samsung",
+    "codigo": "##21#6",
+    "descripcion": "Desactiva el desvío de todas las llamadas.",
+    "riesgo": "Bajo",
+    "indice": 36
+  }
+]
