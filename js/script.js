@@ -3,6 +3,7 @@ const tablaBody = document.querySelector("#tablaCodigos tbody");
 const Contador = document.getElementById("contador");
 const btnEditar = document.getElementById("btnEditar");
 const inputSearch = document.getElementById("searchInput");
+const imgBtn = document.querySelector('#btnImage1');
 let marcaSeleccionada = "";
 let CodigosCargados;
 let datos = [];
@@ -12,12 +13,18 @@ window.onload = function() {
       btnEditar.disabled = false;
       btnEditar.style.backgroundColor = "#00C853";
       btnEditar.style.cursor = "pointer";
+      imgBtn.src = 'images/edit_dark.avif';
   } else {
       btnEditar.disabled = true;
       btnEditar.style.backgroundColor = "#888";
       btnEditar.style.cursor = "not-allowed";
+      imgBtn.src = 'images/edit_light.avif';
   }
 }
+
+btnEditar.addEventListener("mouseover", () => {
+  document.querySelector('#btnImage1').src = 'images/edit_dark.avif';
+});
 
 // document.addEventListener("DOMContentLoaded", () => {
 //     // Cargar el archivo JSON
@@ -167,10 +174,12 @@ function mostrarTabla() {
     btnEditar.disabled = false;
     CodigosCargados = filtrados.length;
     Contador.innerHTML = `Códigos cargados: ${CodigosCargados}`;
+    imgBtn.src = 'images/edit_dark.avif';
   } else {
     btnEditar.disabled = true;
     CodigosCargados = 0;
     Contador.innerHTML = `Códigos cargados: ${CodigosCargados}`;
+    imgBtn.src = 'images/edit_light.avif';
   }
 }
 
@@ -188,6 +197,7 @@ selectMarca.addEventListener("change", () => {
     btnEditar.disabled = false;
     btnEditar.style.backgroundColor = "#00C853";
     btnEditar.style.cursor = "pointer";
+    imgBtn.src = 'images/edit_dark.avif';
   } else {
     btnEditar.disabled = true;
     btnEditar.style.backgroundColor = "#888";
@@ -195,6 +205,7 @@ selectMarca.addEventListener("change", () => {
     CodigosCargados = 0;
     Contador.innerHTML = `Códigos cargados: ${CodigosCargados}`;
     inputSearch.value = "";
+    imgBtn.src = 'images/edit_light.avif';
   }
 });
   

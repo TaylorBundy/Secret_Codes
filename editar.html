@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/favicon.ico">
   <title>Editar Códigos Secretos</title>
   <link rel="stylesheet" href="css/estilos.css">
 </head>
@@ -16,12 +17,13 @@
     <section id="selector">
       <label for="marcaSelect">Seleccioná la marca:</label>
       <select class="marcaSelectEditar" id="marcaSelect" onmouseover="Titulos(this.id)"></select>
-      <button class="btns" id="btnAgregarCodigo" onmouseover="Titulos(this.id)">➕ Agregar Código</button>
-      <button class="btns" id="btnDescargar" onmouseover="Titulos(this.id)">💾 Descargar Cambios</button>
+      <button class="btns" id="btnAgregarCodigo" onmouseover="Titulos(this.id)"><img id="btnImage1" class="imgAdd" src="images/add_light.avif" alt="">Agregar Código</button>
+      <button class="btns" id="btnDescargar" onmouseover="Titulos(this.id)"><img id="btnImage1" class="imgDownload" src="images/download_light.avif" alt="">Descargar Cambios</button>
     </section>
 
     <div class="SearchContainer">
-      <span class="searchIcon">🔍</span>
+      <img id="btnImage" src="images/search.avif" alt="">
+      <!-- <span class="searchIcon">🔍</span> -->
       <input type="text" id="searchInput" onmouseover="Titulos(this.id)" placeholder="Buscar por Código o Descripción">
       <div id="contador" onmouseover="Titulos(this.id)">Códigos cargados: 0</div>
     </div>

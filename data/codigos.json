@@ -439,12 +439,5 @@
     "descripcion": "Desactiva el desvío de todas las llamadas.",
     "riesgo": "Bajo",
     "indice": 35
-  },
-  {
-    "marca": "Samsung",
-    "codigo": "##21#6",
-    "descripcion": "Desactiva el desvío de todas las llamadas.",
-    "riesgo": "Bajo",
-    "indice": 36
   }
 ]

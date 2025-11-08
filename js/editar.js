@@ -37,6 +37,8 @@ const modalEliminar = document.getElementById("modalEliminar");
 const textoEliminar = document.getElementById("textoEliminar");
 const btnCancelarEliminar = document.getElementById("btnCancelarEliminar");
 const btnAceptarEliminar = document.getElementById("btnAceptarEliminar");
+const imgAdd = document.querySelector('.imgAdd');
+const imgDownload = document.querySelector('.imgDownload');
 
 let indexPendienteEliminar = null; // guardará el índice del item a eliminar
 
@@ -83,6 +85,8 @@ marcaSelect.addEventListener("change", () => {
         btnAgregarCodigo.disabled = false;
         btnAgregarCodigo.style.backgroundColor = "#00C853";
         btnAgregarCodigo.style.cursor = "pointer";
+        imgAdd.src = 'images/add_dark.avif';
+        // imgDownload.src = 'images/download_dark.avif';
         segundos = 5000;
         intentosMaximos = 5;
         if (dataCargadaOriginal && dataCargadaEditada) {
@@ -94,6 +98,8 @@ marcaSelect.addEventListener("change", () => {
         btnAgregarCodigo.disabled = true;
         btnAgregarCodigo.style.backgroundColor = "#888";
         btnAgregarCodigo.style.cursor = "not-allowed";
+        imgAdd.src = 'images/add_light.avif';
+        // imgDownload.src = 'images/download_light.avif';
         CodigosCargados = 0;
         numeroDataOriginal = 0;
         numeroDataEditada = 0;
@@ -140,7 +146,7 @@ function mostrarTabla() {
         </td>
         <td class="edit">
           <div class="btnContainer">
-            <button id="btnEliminar${index}" class="btnEliminar" data-index="${item.indice - 1}" onmouseover="Titulos(this.id, ${index})">${Icons.eliminar}</button>
+            <button id="btnEliminar${index}" class="btnEliminar" data-index="${item.indice - 1}" onmouseover="Titulos(this.id, ${index})"><img id="btnImage2" src="images/delete.avif" alt=""></button>
           </div>
         </td>
       `;
@@ -252,7 +258,7 @@ function buscarCodigos() {
       </td>
       <td class="edit">
         <div class="btnContainer">
-          <button id="btnEliminar${index}" class="btnEliminar" data-index="${item.indice}" onmouseover="Titulos(this.id, ${index})">${Icons.eliminar}</button>
+          <button id="btnEliminar${index}" class="btnEliminar" data-index="${item.indice}" onmouseover="Titulos(this.id, ${index})"><img id="btnImage2" src="images/delete.avif" alt=""></button>
         </div>
       </td>
     `;
@@ -469,11 +475,13 @@ function iniciarTemporizador(tiempo, intentosMaximos) {
           btnDescargar.disabled = false;
           btnDescargar.style.backgroundColor = "#00C853";
           btnDescargar.style.cursor = "pointer";
+          imgDownload.src = 'images/download_dark.avif';
       } else if (numeroDataOriginal > ContadorTabla || numeroDataEditada > ContadorTabla) {
         //console.log(`Número de códigos originales: ${numeroDataOriginal} para ${marcaSeleccionada}.\nEs mayor a los códigos editados: ${ContadorTabla} para ${marcaSeleccionada}.\nActualizando datos originales en LocalStorage...`);
         btnDescargar.disabled = false;
         btnDescargar.style.backgroundColor = "#00C853";
         btnDescargar.style.cursor = "pointer";
+        imgDownload.src = 'images/download_dark.avif';
         //cargarDesdeLocalStorage();
         ActualizaLocalStorage(codigosFiltrados, marcaSeleccionada);
         detenerTemporizador();
@@ -482,6 +490,7 @@ function iniciarTemporizador(tiempo, intentosMaximos) {
           //btnDescargar.disabled = true;
           btnDescargar.style.backgroundColor = "#888";
           btnDescargar.style.cursor = "not-allowed";
+          imgDownload.src = 'images/download_light.avif';
       }
       intentos += 1;
     } else {
@@ -528,8 +537,9 @@ function detenerTemporizador() {
       btn.addEventListener("click", e => {
         //console.log(id);
         //indice = `${item.parentElement.parentElement.previousElementSibling.previousSibling.previousElementSibling.previousElementSibling.previousElementSibling.textContent}`;
-        const index = parseInt(e.target.dataset.index);
-        //console.log(index);
+        //const index = parseInt(e.target.dataset.index);
+        const index = parseInt(btn.dataset.index);
+        console.log(index);
         //const codigosFiltrados = data.filter(item => item.marca === marcaSeleccionada);
         const itemAEliminar = codigosFiltrados[index];
         //console.log(codigosFiltrados[index]);
@@ -717,7 +727,7 @@ function actualizarTabla() {
       </td>
       <td class="edit">
         <div class="btnContainer">
-          <button id="btnEliminar${index}" class="btnEliminar" data-index="${item.indice - 1}" onmouseover="Titulos(this.id, ${index})">${Icons.eliminar}</button>
+          <button id="btnEliminar${index}" class="btnEliminar" data-index="${item.indice - 1}" onmouseover="Titulos(this.id, ${index})"><img id="btnImage2" src="images/delete.avif" alt=""></button>
         </div>
       </td>
     `;

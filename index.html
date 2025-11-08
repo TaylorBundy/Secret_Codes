@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/favicon.ico">
   <title>Códigos Secretos Android</title>
   <link rel="stylesheet" href="css/estilos.css">
 </head>
@@ -18,10 +19,11 @@
       <select id="marcaSelect" onmouseover="Titulos(this.id)">
         <option value="">-- Elegí una marca --</option>
       </select>
-      <button id="btnEditar" onmouseover="Titulos(this.id)">🛠️ Editar Códigos</button>
+      <button id="btnEditar" class="btnsPrincipales" onmouseover="Titulos(this.id)"><img id="btnImage1" src="images/edit_light.avif" alt="">Editar Códigos</button>
     </section>
     <div class="SearchContainer">
-      <span class="searchIcon">🔍</span>
+      <img id="btnImage" src="images/search.avif" alt="">
+      <!-- <span class="searchIcon"></span> -->
       <input type="text" id="searchInput" onmouseover="Titulos(this.id)" placeholder="Buscar por Código o Descripción">
       <div id="contador" onmouseover="Titulos(this.id)">Códigos cargados: 0</div>
     </div>
