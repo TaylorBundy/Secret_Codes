@@ -60,7 +60,7 @@ Estos códigos brindan acceso a menús ocultos, herramientas de diagnóstico y f
 
 1. Cloná el repositorio:
    ```bash
-   git clone https://github.com/TaylorBundy/Secret_Codes.git
+   git clone https://github.com/TaylorBundy/Secret_Codes.gi
    ```
 2. Abrí `index.html` directamente en tu navegador (no requiere servidor).
 3. Si querés editar los códigos, accedé a `editar.html`.
