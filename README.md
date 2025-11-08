@@ -23,13 +23,24 @@ Estos códigos brindan acceso a menús ocultos, herramientas de diagnóstico y f
  ├── css/
  │   └── estilos.css                # Estilos de la interfaz
  │
+ ├── data/
+ │   └── codigos.json               # Base de datos con los códigos
+ │
+ ├── images/
+ │   ├── edit_light.avif                  # Imagenes
+ │   ├── edit_dark.avif                  # Imagenes
+ │   ├── add_light.avif                  # Imagenes
+ │   ├── add_dark.avif                  # Imagenes
+ │   ├── download_light.avif                  # Imagenes
+ │   ├── download_dark.avif                  # Imagenes
+ │   ├── delete.avif                  # Imagenes
+ │   ├── search.avif                  # Imagenes
+ │   └── favicon.ico                  # Favicon
+ │
  ├── js/
  │   ├── assets.js                  # Funciones comunes y reutilizables
  │   ├── editar.js                  # Lógica de la página de edición
  │   └── script.js                  # Funciones principales (página inicial)
- │
- ├── data/
- │   └── codigos.json               # Base de datos con los códigos
  │
  ├── index.html                     # Página principal (búsqueda y listado)
  ├── editar.html                    # Página de edición de códigos
