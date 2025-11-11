@@ -355,3 +355,143 @@ body {
   width: 160px;
   padding: 8px 10px;
 }
+
+@media (min-width: 360px) and (max-width: 854px) {
+  body {
+    padding: 10px;
+  }
+  header {
+    /* text-align: center;
+    background-color: #1E1E1E;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5); */
+    /* width: 80%; */
+    /* margin: auto; */
+    border-radius: 5px;
+  }
+  header h1 {
+    font-size: 14px;
+  }
+  main {
+    padding: 0;
+    margin: 5px 0;
+  }
+  /* .index #selector {
+    display: table-row;
+    margin: 0;
+  } */
+  .editar #selector, .index #selector {
+    display: grid;
+    grid-gap: 5px;
+    margin: 0;
+  }
+  .editar #selector {
+    justify-content: unset;
+  }
+  label {
+    font-size: 12px;
+    margin: 0 5px;
+    grid-column: 1;
+  }
+  select {
+    font-size: 10px;
+    grid-column: 2;
+  }
+  .editar label {
+    grid-column: 1;
+  }
+  .editar select {
+    grid-column: 2;
+  }
+  #btnEditar, #btnAgregarCodigo, #btnDescargar {
+    display: flex;
+    font-size: 10px;
+    width: 100px;
+    padding: 5px;
+    margin: 0;
+  }
+  #btnAgregarCodigo, #btnDescargar {
+    width: auto;
+    border-radius: 8px;
+  }
+  .SearchContainer {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+  }
+  #btnImage {
+    top: 0;
+  }
+  #searchInput {
+    width: 150px;
+    font-size: 10px;
+  }
+  #contador {
+    font-size: 12px;
+    margin: 5px;
+  }
+  table thead th {
+    padding: 5px;
+  }
+  th {
+    font-size: 10px;
+  }
+  table tbody td {
+    font-size: 10px;
+    padding: 5px;
+  }
+  .index table tbody td:nth-child(1), .index table tbody td:nth-child(3) {
+    width: 10%;
+    padding: 5px;
+    text-align: center;
+    word-break: break-word;
+  }
+  .editar table thead :is(th:nth-child(1), th:nth-child(2), th:nth-child(4), th:nth-child(5)) {
+    width: 10px;
+  }
+  .editar table thead :is(th:nth-child(1), th:nth-child(2), th:nth-child(4), th:nth-child(5)), .editar table tbody :is(td:nth-child(1), td:nth-child(2)) {
+    font-size: 8px;
+  }
+  .editar table tbody td:nth-child(1), .editar table tbody td:nth-child(2), .editar table tbody td:nth-child(4) {
+    /* width: 10%; */
+    padding: 5px;
+    text-align: center;
+    word-break: break-word;
+  }
+  .editar table tbody td:nth-child(2) {
+    font-size: 9px;
+  }
+  .editar table tbody td:nth-child(4) {
+    padding: 0;
+  }
+  .editar table tbody td:nth-child(5) {
+    padding: 0;
+    margin: 0;
+  }
+  .editar table select {
+    padding: 0;
+  }
+  .editar .btnEliminar {
+    padding: 0;
+  }
+  .editar #btnImage2 {
+    width: 11px;
+    height: 11px;
+    padding: 2px 5px;
+  }
+
+  footer {
+    /* text-align: center;
+    background-color: #1E1E1E;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5); */
+    /* width: 80%; */
+    margin: 0;
+    border-radius: 5px;
+  }
+  footer p {
+    font-size: 14px;
+    margin: 0;
+  }
+}
